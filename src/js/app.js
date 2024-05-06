@@ -98,12 +98,14 @@ function calcularPropina(){
             tipPerson = tipTotal / people
             total = amount + tipTotal
             mostrarResultados(tipTotal.toFixed(2), tipPerson.toFixed(2), total.toFixed(2))
+            break
 
         case "50":
             tipTotal = amount * .5
             tipPerson = tipTotal / people
             total = amount + tipTotal
             mostrarResultados(tipTotal.toFixed(2), tipPerson.toFixed(2), total.toFixed(2))
+            break
 
         case "otro":
             const other = document.querySelector('#other-option') // Llamamos al input creado
@@ -112,6 +114,7 @@ function calcularPropina(){
             tipPerson = tipTotal / people
             total = amount + tipTotal
             mostrarResultados(tipTotal.toFixed(2), tipPerson.toFixed(2), total.toFixed(2))
+            break
 
     }
 
